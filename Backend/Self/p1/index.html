@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sidebar{
+            width: 200px;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: repeat(8,1fr);
+            border: 1px solid black;
+            justify-items: center;
+            align-items: center;
+            background-color: #16213B;
+            gap: 20px;
+        }
+        .sidebar a{
+            color:#949ab0;
+            text-decoration: none;  
+            
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 400px 200px  100px 100px 100px 100px ;
+            width: 400px;
+            height: 40px;
+            align-items: center;
+            justify-items: center;
+        }
+        #container{
+            display: grid;
+            grid-template-columns:100px  90vw;
+            grid-template-rows: 10px;
+            gap: 100px;
+            height: 96vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="sidebar">
+            <a href="#" class="dashboard">Dashboard</a>
+            <a href="#" class="projects">Projects</a>
+            <a href="#" class="tasks">Tasks</a>
+            <a href="#" class="calendar">Calendar</a>
+            <a href="#" class="analytics">Analytics</a>
+            <a href="#" class="messages">Messages</a>
+            <a href="#" class="team">Team</a>
+            <a href="#" class="settings">Settings</a>
+            <span>
+                <select name="John" id="profile">John Doe</select>    
+            </span>
+        </div>
+       
+        <div class="content">
+            <h1 class="h1">Welcome Back, John</h1>
+            <span>
+
+            </span>
+            <div class="searchbar">
+                <input type="search" class="search">
+            </div>
+            <div class="notifications">
+                <a href="#">Notifications</a>
+            </div>
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

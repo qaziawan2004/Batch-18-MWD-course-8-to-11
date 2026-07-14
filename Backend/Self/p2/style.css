@@ -1,0 +1,22 @@
+.con{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #a50648;
+    color: #fff;
+    width: 20vw;
+    height: 50vh;
+}
+.con input{
+    margin: 10px;
+    border-radius: 6px;
+}
+.con button{
+    border-radius:6px ;
+    /* padding: 8px; */
+    width: 5vw;
+    height: 5vh;
+    color: #fff;
+    background-color: #a50648
+}

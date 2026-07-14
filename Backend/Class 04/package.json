@@ -1,0 +1,22 @@
+{
+  "name": "class-04",
+  "version": "1.0.0",
+  "description": "learning nodejs,",
+  "keywords": [
+    "backend",
+    "server",
+    "running",
+    "database"
+  ],
+  "license": "ISC",
+  "author": "Mudassir Awan",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "--watch server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
