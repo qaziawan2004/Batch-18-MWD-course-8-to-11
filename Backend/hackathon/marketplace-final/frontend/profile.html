@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | MarketHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="appNav"></div>
+    <div class="app-shell">
+        <div id="appSidebar"></div>
+        <main class="main-content">
+            <div class="content-wrap">
+                <div class="page-title">
+                    <span class="eyebrow">Account</span>
+                    <h1>Profile</h1>
+                    <p>Keep your seller information up to date.</p>
+                </div>
+                <form id="profileForm" class="profile-panel panel">
+                    <div class="profile-top">
+                        <div id="profileAvatar" class="avatar xl">U</div>
+                        <div>
+                            <strong>Public seller profile</strong>
+                            <p class="muted">Your name and bio can be seen by marketplace visitors.</p>
+                        </div>
+                    </div>
+                    <div class="form-stack">
+                        <div class="form-field">
+                            <label for="name">Full name</label>
+                            <input id="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input id="email" disabled>
+                        </div>
+                        <div class="form-field">
+                            <label for="bio">Bio</label>
+                            <textarea id="bio" maxlength="300" placeholder="Tell buyers a little about yourself..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-primary" type="submit">Save Profile</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/guard.js"></script>
+    <script type="module" src="js/profile.js"></script>
+</body>
+</html>

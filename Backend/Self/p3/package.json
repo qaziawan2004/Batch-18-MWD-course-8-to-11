@@ -1,0 +1,12 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "learning and practicing backend ",
+  "license": "ISC",
+  "author": "Mudassir Awan",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

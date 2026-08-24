@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset OTP | MarketHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="verify-reset">
+    <main class="form-page">
+        <section class="auth-card otp-box">
+            <div class="auth-brand"><a class="brand" href="index.html"><span class="brand-mark">M</span><span>MarketHub</span></a></div>
+            <h1>Enter reset OTP</h1>
+            <p class="subtitle">We sent a 6-digit reset OTP to <strong id="emailText"></strong>.</p>
+            <div id="message" class="message"></div>
+            <form id="form" class="form-stack">
+                <div class="form-field">
+                    <label for="otp">Reset OTP</label>
+                    <input id="otp" name="otp" class="otp-input" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" required placeholder="000000">
+                </div>
+                <button class="btn btn-primary" type="submit">Verify OTP</button>
+            </form>
+            <button class="resend" id="resendResetButton" type="button">Didn't receive it? Send again</button>
+        </section>
+    </main>
+    <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

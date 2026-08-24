@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product | MarketHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="add-product">
+    <div id="appNav"></div>
+    <div class="app-shell">
+        <div id="appSidebar"></div>
+        <main class="main-content">
+            <div class="content-wrap">
+                <div class="page-title">
+                    <span class="eyebrow">Product management</span>
+                    <h1>Add Product</h1>
+                    <p>Create a listing with up to five Cloudinary-hosted images.</p>
+                </div>
+                <form id="productForm" class="product-form panel">
+                    <div id="message" class="message"></div>
+                    <div class="form-stack">
+                        <div class="form-field">
+                            <label for="title">Product title</label>
+                            <input id="title" name="title" required maxlength="120" placeholder="e.g. iPhone 14 Pro">
+                        </div>
+                        <div class="form-field">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" required maxlength="2000" placeholder="Describe the product honestly..."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="price">Price (PKR)</label>
+                                <input id="price" name="price" type="number" min="0" step="1" required placeholder="120000">
+                            </div>
+                            <div class="form-field">
+                                <label for="location">Location</label>
+                                <input id="location" name="location" required placeholder="Karachi">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="category">Category</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Select category</option>
+                                    <option>Electronics</option>
+                                    <option>Fashion</option>
+                                    <option>Furniture</option>
+                                    <option>Vehicles</option>
+                                    <option>Books</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="condition">Condition</label>
+                                <select id="condition" name="condition" required>
+                                    <option value="">Select condition</option>
+                                    <option>New</option>
+                                    <option>Used</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="images">Product images</label>
+                            <input id="images" name="images" type="file" accept="image/*" multiple required>
+                            <small class="muted">Maximum 5 images, 5 MB each. Images are uploaded to Cloudinary.</small>
+                            <div id="imagePreview" class="image-preview"></div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn btn-secondary" href="my-products.html">Cancel</a>
+                        <button class="btn btn-primary" type="submit">Create Product</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/guard.js"></script>
+    <script type="module" src="js/manage.js"></script>
+</body>
+</html>

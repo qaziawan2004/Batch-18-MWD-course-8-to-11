@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="verify-otp.css">
+</head>
+
+<body>
+    <div class="cont">
+        <h1 class="cont-h1">Verify Your Email</h1>
+        <div class="otp-card">
+            <h2 class="otp-card-h2">OTP Verification</h2>
+            <p class="otp-subtext">
+                We've sent a 6-digit code to <span id="userEmail">your email</span>.
+                Enter it below to verify your account.
+            </p>
+
+            <input type="text" name="otp" placeholder="Enter OTP" id="otp" maxlength="6" inputmode="numeric">
+
+            <div class="button">
+                <button type="button" class="verify-btn" onClick="verifyOtp()">Verify</button>
+            </div>
+
+            <p class="resend-text">
+                Didn't receive the code?
+                <a href="javascript:void(0)" id="resendLink" onClick="resendOtp()">Resend OTP</a>
+            </p>
+        </div>
+    </div>
+    <script type="module" src="./verify-otp.js"></script>
+</body>
+
+</html>

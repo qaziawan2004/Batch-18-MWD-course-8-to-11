@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body  onload="authCheck()">
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <!-- Sidebar top -->
+            <div class="sidebar-top">
+
+                <h2 class="logo">TodoApp</h2>
+
+                <!-- Hamburger -->
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+
+            <div class="sidebar-menu" id="sidebarMenu">
+
+                <a href="#" class="active">
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    My Todos
+                </a>
+
+                <a href="#">
+                    Profile
+                </a>
+
+                <a href="#">
+                    Settings
+                </a>
+
+                <button type="button" class="logout-btn" id="logoutBtn" onClick="logoutHandler()">
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+
+            <!-- Navbar -->
+            <nav class="navbar">
+
+                <h2>Dashboard</h2>
+
+                <div class="user-info">
+
+                    <div class="avatar" id="avatar">
+                        U
+                    </div>
+
+                    <span id="username">
+                        <h2 id="dashboardHeading"></h2>
+                    </span>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Welcome -->
+            <section class="welcome-section">
+
+                <h1 id="welcomeName">
+                    Welcome Back 👋
+                </h1>
+
+                <p>
+                    Manage your daily tasks and stay productive.
+                </p>
+
+            </section>
+
+
+            <!-- Stats -->
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <h3>Total Todos</h3>
+
+                    <h1 id="totalTodos">
+                        0
+                    </h1>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>Completed</h3>
+
+                    <h1 id="completedTodos">
+                        0
+                    </h1>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>Pending</h3>
+
+                    <h1 id="pendingTodos">
+                        0
+                    </h1>
+
+                </div>
+
+            </section>
+
+
+            <!-- Todo Section -->
+            <section class="todo-section">
+
+
+                <!-- Todo Header -->
+                <div class="todo-header">
+
+                    <h2>
+                        My Todos
+                    </h2>
+
+                    <!-- <button class="add-btn" id="addTodoBtn">
+                        + Add Todo
+                    </button> -->
+
+                </div>
+
+
+                <!-- Todo Input -->
+                <div class="todo-input">
+
+                    <input
+                        type="text"
+                        id="todoTitle"
+                        placeholder="Todo title"
+                    >
+
+
+                    <input
+                        type="text"
+                        id="todoDescription"
+                        placeholder="Description"
+                    >
+                    <input type="file" id="fileInput">
+
+                    <input
+                        type="date"
+                        id="todoDate"
+                    >
+
+
+                    <div class="additional">
+
+                        <select id="todoPriority">
+
+                            <option value="low">
+                                🟢 Low
+                            </option>
+
+                            <option value="medium" selected>
+                                🟠 Medium
+                            </option>
+
+                            <option value="high">
+                                🔴 High
+                            </option>
+
+                        </select>
+
+
+                        <button type="button" id="submitTodo" onclick="addTodo()">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Todos -->
+                <div class="todos" id="todosContainer">
+
+                    <!-- Todo cards will come here -->
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script type="module" src="./dashboard.js"></script>
+
+</body>
+
+</html>

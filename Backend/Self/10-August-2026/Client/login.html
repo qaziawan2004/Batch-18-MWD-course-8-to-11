@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body onload="authCheck()">
+        <div class="cont">
+        <h1 class="cont-h1">Login To Continue</h1>
+    <div class="signup-card">
+        <h2 class="signup-card-h2">Login Form</h2>
+        <input type="email" name="email" placeholder="Enter your email here!" id="email">
+        <input type="password" name="password" placeholder="Enter your password here!" id="password">
+        <div class="button">
+            <a href="./signup.html">Create Account??</a>
+            <button type="button" onclick="loginHandler()">Login</button>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="./login.js"></script>
+</body>
+</html>

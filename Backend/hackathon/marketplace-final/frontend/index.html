@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MarketHub community marketplace for buying and selling products.">
+    <title>MarketHub | Community Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="appNav"></div>
+
+    <div class="app-shell">
+        <div id="appSidebar"></div>
+
+        <main class="main-content">
+            <div class="content-wrap">
+                <section class="hero hero-upgraded">
+                    <div class="hero-copy">
+                        <span class="eyebrow">Global community marketplace</span>
+                        <h1>Buy smart. Sell easy. <span>Find your next favorite.</span></h1>
+                        <p>
+                            Discover products from real sellers, compare prices,
+                            save your favorites, and list your own items in minutes.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a class="btn btn-light" href="add-product.html">＋ Sell an Item</a>
+                            <a class="btn btn-ghost-light" href="#marketplace">Browse Marketplace</a>
+                        </div>
+
+                        <div class="hero-points">
+                            <span>✓ Community listings</span>
+                            <span>✓ Secure accounts</span>
+                            <span>✓ Easy wishlist</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-art" aria-hidden="true">
+                        <div class="hero-orb orb-one"></div>
+                        <div class="hero-orb orb-two"></div>
+                        <div class="hero-card-float float-one">🛍️</div>
+                        <div class="hero-card-float float-two">♥</div>
+                        <div class="hero-card-float float-three">✨</div>
+                    </div>
+                </section>
+
+                <section class="market-stats" aria-label="Marketplace highlights">
+                    <div class="stat-card">
+                        <span class="stat-icon">🛒</span>
+                        <div>
+                            <strong>Community Listings</strong>
+                            <span>Products shared by sellers</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">🔐</span>
+                        <div>
+                            <strong>Verified Accounts</strong>
+                            <span>Email OTP protected access</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">❤️</span>
+                        <div>
+                            <strong>Save Favorites</strong>
+                            <span>Build your personal wishlist</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="marketplace" class="section-heading upgraded-heading">
+                    <div>
+                        <span class="eyebrow">Explore</span>
+                        <h2>Fresh listings from the community</h2>
+                        <p class="section-description">
+                            Browse products from every seller. You can explore without an account;
+                            sign in only when you want to save something to your wishlist or sell an item.
+                        </p>
+                    </div>
+                    <span id="resultInfo" class="result-pill"></span>
+                </div>
+
+                <section class="filters upgraded-filters">
+                    <div class="field search-field">
+                        <label for="search">Search products</label>
+                        <div class="input-with-icon">
+                            <span>⌕</span>
+                            <input id="search" type="search" placeholder="Search by product title...">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="">All categories</option>
+                            <option>Electronics</option>
+                            <option>Fashion</option>
+                            <option>Furniture</option>
+                            <option>Vehicles</option>
+                            <option>Books</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="condition">Condition</label>
+                        <select id="condition">
+                            <option value="">Any condition</option>
+                            <option>New</option>
+                            <option>Used</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="status">Status</label>
+                        <select id="status">
+                            <option value="">Any status</option>
+                            <option>Available</option>
+                            <option>Sold</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="sort">Sort by</label>
+                        <select id="sort">
+                            <option value="">Newest</option>
+                            <option value="price_asc">Price: Low → High</option>
+                            <option value="price_desc">Price: High → Low</option>
+                            <option value="views_desc">Most Viewed</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section id="productGrid" class="product-grid marketplace-grid"></section>
+                <div id="pagination" class="pagination"></div>
+            </div>
+        </main>
+    </div>
+
+    <div id="appFooter"></div>
+
+    <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

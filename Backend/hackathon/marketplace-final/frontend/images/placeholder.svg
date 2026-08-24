@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#eeecff"/>
+  <circle cx="400" cy="260" r="85" fill="#d8d3ff"/>
+  <path d="M270 470c55-100 205-100 260 0" fill="#d8d3ff"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Arial" font-size="28" fill="#5b4bdb">MarketHub</text>
+</svg>
