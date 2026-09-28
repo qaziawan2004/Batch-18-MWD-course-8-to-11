@@ -1,0 +1,165 @@
+body {
+    width: 100%;
+    color: #fff;
+    background:
+        radial-gradient(circle at 20% 20%,
+            #6366f1 0%,
+            transparent 30%),
+        radial-gradient(circle at 80% 80%,
+            #8b5cf6 0%,
+            transparent 30%),
+        linear-gradient(135deg,
+            #0f172a,
+            #1e1b4b);
+
+    overflow: hidden;
+
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+    margin-top: 100px;
+}
+
+.sec1 input {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sec1 select {
+    margin-top: 10px;
+}
+
+.page {
+    display: flex;
+}
+
+.page aside {
+    width: 15%;
+    background:rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: -3px;
+    z-index: 100;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+#Dashboard {
+    align-self: flex-start;
+    margin-left: 200px;
+}
+.content1 {
+    width: 80vw;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    margin: 20px 0 0 20px;
+    height: 80vh;
+    
+}
+
+.headercontent {
+    position: relative;
+    right: 48px;
+    align-items: center;
+    z-index: 0;
+}
+
+/* header {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    margin: 0 500px 0 30px;
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+
+} */
+
+header {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    width: 90vw;
+    /* width: 100%; */
+
+    padding: 0 20px;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 10;
+}
+.hp-1 input {
+    padding: 10px 200px 10px 50px;
+    margin: 0 0 0 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+
+}
+
+.hp-1 input::placeholder {
+    color: #fff;
+}
+
+.hp-2 {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding: 0 40px 0 20px;
+}
+
+.usersec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.usersec2 {
+    width: 90px;
+
+}
+
+.usersec2 b,
+p {
+    font-size: 14px;
+
+}
+
+.p-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.b-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

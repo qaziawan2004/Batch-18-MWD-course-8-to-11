@@ -1,0 +1,10 @@
+const foo = (userName)=> {
+
+
+}
+
+foo(Jaffar)
+todays topic is called data binding
+topic to learn
+closure 
+lexical scope

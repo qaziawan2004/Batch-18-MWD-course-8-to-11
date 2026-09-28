@@ -1,0 +1,23 @@
+{
+  "name": "new-ethical-pr",
+  "version": "1.0.0",
+  "description": "ethical way for practice",
+  "license": "ISC",
+  "author": "Mudassir Awan",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:dev": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.0",
+    "nodemailer": "^10.0.9",
+    "nodemon": "^3.1.14"
+  }
+}

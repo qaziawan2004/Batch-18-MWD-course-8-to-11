@@ -1,0 +1,8 @@
+state method in react 
+state return array
+array main 2 value
+0 index pr read value
+1 index pr write value
+
+
+state  old string ko agr dobara initialize kren to update kr deta h pr array ko ni krta
