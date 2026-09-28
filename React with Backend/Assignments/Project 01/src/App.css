@@ -58,3 +58,7 @@ height: 90px;
   align-items: center;
   flex-direction: column;
 }
+.listing img{
+  border-radius: 50%;
+  
+}
