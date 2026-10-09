@@ -1,0 +1,639 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f4f6f8;
+
+  color: #222;
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+  min-height: 70px;
+
+  background: #1f2937;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 40px;
+}
+
+
+.navbar-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.navbar button {
+  background: #dc3545;
+
+  color: white;
+
+  border: none;
+
+  padding: 9px 15px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+
+/* =====================================
+   AUTH
+===================================== */
+
+.auth-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+.auth-form {
+  width: 420px;
+
+  max-width: 100%;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 25px
+    rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  text-align: center;
+}
+
+
+.auth-form h1 {
+  margin-bottom: 5px;
+}
+
+
+.auth-subtitle {
+  color: #666;
+
+  margin-bottom: 5px;
+}
+
+
+.auth-form input,
+.auth-form textarea,
+.auth-form select {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+
+.auth-form input:focus {
+  border-color: #007bff;
+}
+
+
+.auth-form > button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #007bff;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+.auth-form > button:hover {
+  background: #0056b3;
+}
+
+
+.auth-form > button:disabled {
+  background: #999;
+
+  cursor: not-allowed;
+}
+
+
+.auth-form a {
+  color: #007bff;
+
+  text-decoration: none;
+}
+
+
+.auth-form small {
+color: #666;
+font-size: 12px;
+text-align: left;
+}
+
+/* =====================================
+PASSWORD INPUT
+===================================== */
+
+.password-wrapper {
+position: relative;
+width: 100%;
+}
+
+.password-wrapper input {
+padding-right: 70px;
+}
+
+.password-toggle {
+position: absolute;
+
+right: 8px;
+top: 50%;
+
+transform: translateY(-50%);
+
+border: none;
+
+background: transparent;
+
+color: #007bff;
+
+font-weight: bold;
+
+cursor: pointer;
+
+padding: 5px;
+}
+
+/* =====================================
+MESSAGES
+===================================== */
+
+.error {
+background: #fee2e2;
+
+color: #b91c1c;
+
+border: 1px solid #fecaca;
+
+padding: 10px;
+
+border-radius: 6px;
+
+font-size: 14px;
+}
+
+.success {
+background: #dcfce7;
+
+color: #166534;
+
+border: 1px solid #bbf7d0;
+
+padding: 10px;
+
+border-radius: 6px;
+
+font-size: 14px;
+}
+
+/* =====================================
+DASHBOARD
+===================================== */
+
+.todo-container {
+width: 100%;
+
+max-width: 1000px;
+
+margin: 40px auto;
+
+padding: 0 20px;
+}
+
+.todo-container h1 {
+margin-bottom: 25px;
+
+color: #1f2937;
+}
+
+.section-title {
+margin: 30px 0 15px;
+
+color: #1f2937;
+}
+
+/* =====================================
+TODO FORM
+===================================== */
+
+.todo-form {
+background: white;
+
+padding: 25px;
+
+border-radius: 10px;
+
+box-shadow:
+0 3px 15px
+rgba(0, 0, 0, 0.08);
+
+display: flex;
+
+flex-direction: column;
+
+gap: 12px;
+}
+
+.todo-form input,
+.todo-form textarea,
+.todo-form select,
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+width: 100%;
+
+padding: 12px;
+
+border: 1px solid #d1d5db;
+
+border-radius: 6px;
+
+font-size: 15px;
+
+font-family: inherit;
+
+outline: none;
+}
+
+.todo-form input:focus,
+.todo-form textarea:focus,
+.todo-form select:focus,
+.edit-form input:focus,
+.edit-form textarea:focus,
+.edit-form select:focus {
+border-color: #007bff;
+}
+
+.todo-form button,
+.edit-form button {
+padding: 12px 18px;
+
+border: none;
+
+border-radius: 6px;
+
+background: #007bff;
+
+color: white;
+
+font-size: 15px;
+
+cursor: pointer;
+}
+
+.todo-form button:hover,
+.edit-form button:hover {
+background: #0056b3;
+}
+
+.todo-form button:disabled {
+background: #999;
+
+cursor: not-allowed;
+}
+
+/* =====================================
+TODO LIST
+===================================== */
+
+.todo-list {
+display: flex;
+
+flex-direction: column;
+
+gap: 15px;
+}
+
+.todo-item {
+background: white;
+
+padding: 20px;
+
+border-radius: 10px;
+
+box-shadow:
+0 3px 12px
+rgba(0, 0, 0, 0.07);
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: flex-start;
+
+gap: 20px;
+
+border-left: 5px solid #007bff;
+}
+
+.todo-content {
+flex: 1;
+}
+
+.todo-title-row {
+display: flex;
+
+align-items: center;
+
+gap: 10px;
+}
+
+.todo-title-row input {
+width: 18px;
+
+height: 18px;
+
+cursor: pointer;
+}
+
+.todo-title-row h3 {
+color: #1f2937;
+}
+
+.todo-description {
+margin-top: 10px;
+
+color: #666;
+
+line-height: 1.5;
+}
+
+.todo-meta {
+display: flex;
+
+align-items: center;
+
+gap: 15px;
+
+margin-top: 15px;
+
+font-size: 13px;
+
+color: #777;
+}
+
+/* =====================================
+PRIORITY
+===================================== */
+
+.priority {
+display: inline-block;
+
+padding: 5px 10px;
+
+border-radius: 20px;
+
+font-size: 12px;
+
+font-weight: bold;
+
+text-transform: capitalize;
+}
+
+.priority-low {
+background: #dcfce7;
+
+color: #166534;
+}
+
+.priority-medium {
+background: #fef3c7;
+
+color: #92400e;
+}
+
+.priority-high {
+background: #fee2e2;
+
+color: #991b1b;
+}
+
+/* =====================================
+COMPLETED TODO
+===================================== */
+
+.todo-completed {
+opacity: 0.7;
+
+border-left-color: #22c55e;
+}
+
+.todo-completed h3 {
+text-decoration: line-through;
+
+color: #777;
+}
+
+.todo-completed .todo-description {
+text-decoration: line-through;
+}
+
+/* =====================================
+TODO ACTIONS
+===================================== */
+
+.todo-actions {
+display: flex;
+
+gap: 8px;
+}
+
+.todo-actions button {
+border: none;
+
+padding: 8px 13px;
+
+border-radius: 5px;
+
+color: white;
+
+cursor: pointer;
+}
+
+.edit-button {
+background: #f59e0b;
+}
+
+.edit-button:hover {
+background: #d97706;
+}
+
+.delete-button {
+background: #dc3545;
+}
+
+.delete-button:hover {
+background: #b91c1c;
+}
+
+/* =====================================
+EDIT FORM
+===================================== */
+
+.edit-form {
+background: white;
+
+padding: 25px;
+
+border-radius: 10px;
+
+box-shadow:
+0 3px 15px
+rgba(0, 0, 0, 0.08);
+
+display: flex;
+
+flex-direction: column;
+
+gap: 15px;
+}
+
+.edit-buttons {
+display: flex;
+
+gap: 10px;
+}
+
+.secondary-button {
+background: #6b7280 !important;
+}
+
+.secondary-button:hover {
+background: #4b5563 !important;
+}
+
+/* =====================================
+LOADING / EMPTY
+===================================== */
+
+.loading,
+.empty {
+background: white;
+
+padding: 25px;
+
+border-radius: 8px;
+
+text-align: center;
+
+color: #666;
+}
+
+/* =====================================
+RESPONSIVE
+===================================== */
+
+@media (max-width: 700px) {
+
+.navbar {
+padding: 15px 20px;
+
+flex-direction: column;
+
+gap: 12px;
+
+
+}
+
+.navbar-right {
+width: 100%;
+
+justify-content: center;
+
+
+}
+
+.todo-container {
+margin-top: 25px;
+}
+
+.todo-item {
+flex-direction: column;
+}
+
+.todo-actions {
+width: 100%;
+}
+
+.todo-actions button {
+flex: 1;
+}
+
+.todo-meta {
+flex-direction: column;
+
+align-items: flex-start;
+
+gap: 8px;
+
+
+}
+
+.auth-form {
+padding: 25px 20px;
+}
+
+}

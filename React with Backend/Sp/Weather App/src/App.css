@@ -1,0 +1,72 @@
+.weather-dashboard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 95vh;
+    background:linear-gradient(rgba(13, 2, 110, 0.993)) ;
+}
+.weather-dashboard h1{
+    color: rgb(218, 6, 123);
+    font-weight: 100;
+}
+.weather-dashboard h1 span{
+    /* color: rgb(218, 6, 123); */
+    color: #fff;
+    font-weight: 800;
+}
+.card{
+    border: 2px solid rgb(167, 233, 13);
+    background: blur();
+    border-radius: 20px;
+    padding: 10px;
+    height: 65vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.card input{
+    border-radius: 10px;
+    padding: 10px;
+    width: 25vw;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    color: rgb(218, 6, 123);
+}
+.card input::placeholder{
+font-size:larger;
+font-weight: 400;
+}
+.card button{
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    background: rgb(82, 228, 131);
+    color: #fff;
+    font-weight: 600;
+}
+.card button:hover{
+    background: rgb(7, 224, 79);
+    cursor: pointer;
+}
+.weather-listing{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-listing span{
+    color: #df0b87;
+    font-weight: 800;
+}
+.wind-section{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
